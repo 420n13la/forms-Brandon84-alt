@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>
+		Lab 16 HTML
+	</title>
+</head>
+<body>
+	<H1>Lab 16 HTML</H1>
+	<h2><b>Registration</b></h2>
+	<form>
+		<fieldset>
+			Username: <input type="text" name="username">
+			Status: <select>
+						<option selected>Over 80 yrs old</option>
+						<option selected>Kid (under 10)</option>
+						<option selected>Student</option>
+						<option selected>Employee</option>
+					</select>
+
+			E-Mail: <input type="text" name="email" id="email"><br>
+			<input type="submit">
+			<input type="reset">	
+		</fieldset>
+
+		<fieldset>
+			<label for="phone">Phone: </label>
+			<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+			<small><i>Format: 123-456-7890</i></small>
+		<!--Brandon Levis did this. -->
+
+			<label for="url">Website: </label>
+			<input type="url" name="url" id="url" pattern="https://.*" size="30" required>
+
+			<label for="about">About: </label>
+			<textarea></textarea>
+
+			Cities you visited: <select multiple>
+						<option selected>Montreal</option>
+						<option selected>London</option>
+						<option selected>NewYork</option>
+						<option selected>Paris</option>
+					</select>
+		<!--Brandon Levis did this. -->
+
+			<label for="password">Password: </label>
+			<input type="text" name="password" id="password" size="30" maxlength="20">
+			<input type="submit" value="Register">
+			<input type="reset" value="Clear">
+
+			</fieldset>
+		<h2><b>Search for a site</b></h2>
+		<fieldset>
+		<label for="site-search"> </label>
+		<input type="Search" id="site-search" name="q" arial-label="Search through site content">
+
+		<button>Search</button>
+		<!--Brandon Levis did this. -->
+		</fieldset>
+		<h2><b>Options</b></h2>
+		<fieldset>
+			<label for="ice-cream-choice">Choose a flavor: </label>
+			<input list="ice-cream-choice" id="ice-cream-choice" name="ice-cream-choice">
+
+			<datalist id="ice-cream-choice">
+				<option value="Chocolate"></option>
+				<option value="Vanilla"></option>
+				<option value="Mint"></option>
+				<option value="Starwberry"></option>
+				<option value="Coconut"></option>
+			</datalist>
+		</fieldset>
+
+		<h2><b>Sex</b></h2>
+		<fieldset>
+			<input type="radio" name="gender" value="Male"> Male<br>
+  			<input type="radio" name="gender" value="female"> Female<br>
+		</fieldset>
+		<!--Brandon Levis did this. -->
+
+		<h2><b>Language</b></h2>
+		<fieldset>
+			<input type="radio" name="Language" value="Male"> English<br>
+  			<input type="radio" name="Language" value="female"> French<br>
+			<input type="radio" name="Language" value="female"> Spanish<br>	
+		</fieldset>
+		<h2><b>Photo</b></h2>
+		<fieldset>
+
+		File: <input type="text" name="File" id="File"><br>
+		<input type="image" name="Photo" id="Photo" src="submit.gif">
+		
+			
+
+		</fieldset>
+
+	</form>
+
+</body>
+</html>
